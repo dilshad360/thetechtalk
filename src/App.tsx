@@ -6,6 +6,7 @@ import Blob from "./assets/blob.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { CardProps } from "./interface/cardProps";
+import Loader from "./components/Loader";
 
 function App() {
   const [news, setNews] = useState<CardProps[]>([]);
@@ -29,7 +30,8 @@ function App() {
   }, []);
 
   return (
-    <div className="px-2 flex flex-col justify-start items-center ">
+    <div className="px-2 flex flex-col items-center justify-between min-h-screen ">
+      <>
       <motion.img
         initial={{
           opacity: 0,
@@ -60,11 +62,12 @@ function App() {
                 ))}
               </div>
             ) : (
-              <div>loading...</div>
+              <Loader/>
             )}
           </AnimatePresence>
         </div>
       </div>
+      </>   
       <Footer />
     </div>
   );

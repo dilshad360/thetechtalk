@@ -1,15 +1,10 @@
 import { motion } from "framer-motion"
+import { CardProps } from "../interface/cardProps";
 
-interface CardProps {
-    title: string,
-    image_url: string,
-    description: string,
-    source_icon: string,
-    link: string,
-    source_url: string
-}
+
 
 const truncateDescription = (text: string, maxLength: number) => {
+    if(text == null) return
     if (text.length <= maxLength) {
         return text;
     }
@@ -27,7 +22,7 @@ function Card(item: CardProps) {
                 <div className="absolute p-2 flex flex-col justify-between items-end h-full w-full">
                     <a href={item.source_url}>
                     <div className="bg-[#ffffffe8] p-1 rounded-full" >
-                        <img className="w-6 h-6 rounded-full" src={item.source_icon} alt="" />
+                        <img className="w-6 h-6 rounded-full" src={item.source_icon} alt="icon"  />
                     </div>
                     </a>
                     <div className="bg-white px-4 py-2 rounded-lg w-full border border-gray-300 border-opacity-50

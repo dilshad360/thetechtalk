@@ -1,4 +1,4 @@
-import { GlobalSearchIcon } from "../assets/search"
+import { GlobalSearchIcon } from "../assets/svg/search"
 
 function Loader() {
   return (

@@ -2,7 +2,6 @@ import Card from "./components/Card";
 import Footer from "./components/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import Blob from "./assets/blob.png";
-// import { data } from "./const"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { CardProps } from "./interface/cardProps";

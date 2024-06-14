@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# TheTechTalk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A news website dedicated to technology news, built with ReactJS, Vite, TypeScript, and TailwindCSS.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: ReactJS, Vite, TypeScript, TailwindCSS
+- **Backend**: Node.js, Express (separate repository)
+- **Database**: MongoDB
 
-## Expanding the ESLint configuration
+## Figma UI Design
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Check out the Figma UI design for this project [here](https://www.figma.com/design/nbLdMYemNIGSxYUplIuYFI/TheTechTalk-UI?node-id=1-2).
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Backend API
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+The backend API for fetching and storing news is available in a separate repository: [TheTechTalk API](https://github.com/dilshad360/thetechtalk-api).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

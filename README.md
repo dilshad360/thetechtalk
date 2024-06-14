@@ -1,6 +1,7 @@
 # TheTechTalk
 
-A news website dedicated to technology news, built with ReactJS, Vite, TypeScript, and TailwindCSS.
+TheTechTalk is a tech news website that fetches and displays 10 new tech news articles daily.
+
 
 ## Tech Stack
 

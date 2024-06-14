@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CardProps } from "../interface/cardProps";
+import { CardProps } from "../types/cardProps";
 import placeHolder from "../assets/placeholder.jpg";
 import { truncateDescription } from "../utils/truncateDescription";
 
@@ -26,7 +26,7 @@ function Card(item: CardProps) {
                         <div className="bg-[#ffffffe8] p-1 rounded-full">
                             <img
                                 className="w-6 h-6 rounded-full"
-                                src={item.source_icon}
+                                src={item.source_icon? item.source_icon : placeHolder}
                                 alt="icon"
                             />
                         </div>
@@ -39,7 +39,7 @@ function Card(item: CardProps) {
                         <p className="text-sm font-light">
                             {truncateDescription(
                                 item.description,
-                                item.image_url ? 120 : 280
+                                item.image_url ? 120 : 240
                             )}
                         </p>
                     </div>

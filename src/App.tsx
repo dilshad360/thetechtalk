@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Blob from "./assets/blob.png";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { CardProps } from "./interface/cardProps";
+import { CardProps } from "./types/cardProps";
 import Loader from "./components/Loader";
 
 function App() {
